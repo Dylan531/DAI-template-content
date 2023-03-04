@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Tags - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<h1>Tags</h1>
+{% if tags %}
+
+{% for tag, articles in tags|sort %}
+<p>{{ tag }} - {{ articles|count }} posts</p>
+{% for article in articles %}
+{{ article.date.strftime('%d/%m/%Y') }}
+<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+{% endfor %}
+{% endfor %}
+{% else %}
+<h3 class="ui header">No tags</h3>
+{% endif %}
+{% endblock %}

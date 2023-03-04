@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<title>{% block title %}{{ SITENAME }}{% endblock %}</title>	
+    	<meta name="description" content="{{ DESCRIPTION }}"/>
+    	{% block meta_tags %}
+    	<meta charset="utf-8">
+    	<meta property="og:image" content="">
+    	<meta property="og:locale" content="{{ DEFAULT_LANG }}" />
+    	<meta property="og:site_name" content="{{ SITENAME }}">
+    	<meta property="og:title" content="{{ SITENAME }}" />
+    	<meta property="og:url" content="{{ SITEURL }}"/>
+    	<meta property="og:description" content=" {{ DESCRIPTION }}" />
+    	<meta property="og:type" content="website" />
+    	{% endblock meta_tags %}
+    	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css"/>
+	</head>
+	<body id="background">
+		<div id="main"> 
+
+			{% include 'menu.html'%}
+
+            {% block content %}
+
+			{% include 'article_list.html' %}
+            
+            {% endblock %}
+			<!-- Everything below this is the footer! -->
+			
+			{% include 'footer.html'%}
+    		{% if GOOGLE_ANALYTICS %}
+    			<script type="text/javascript">
+    			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    			ga('create', '{{ GOOGLE_ANALYTICS }}', 'auto');
+    			ga('send', 'pageview');
+    			</script>
+    		{% endif %}
+		</div>
+	</body>
+</html>

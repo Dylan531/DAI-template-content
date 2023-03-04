@@ -1,0 +1,15 @@
+{% if articles_page and articles_paginator.num_pages > 1 %}
+    		<div class="nav">
+    			<div class="center pagination-nav">
+    {% if articles_page.has_previous() %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="navb pagination-inactive">Newer</a></p></div>
+    {% endif %}
+    {% if articles_page.has_next() and articles_page.has_previous() %}
+    					<img class="pagination-icon" src="{{ SITEURL }}/theme/images/thmb/ellipses.png" alt = "..."/>
+    {% endif %}
+    {% if articles_page.has_next() %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="navb pagination-inactive">Older</a></p></div>
+    {% endif %}
+    			</div>
+    		</div>
+{% endif %}

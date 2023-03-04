@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block meta_tags %}
+<meta property="og:title" content="{{ article.title }}" />
+<meta property="og:url" content="{{ article.url }}"/>
+<meta property="og:description" content=" {{ article.meta_description }}" />
+<meta property="og:type" content="article" />
+<meta property="og:author" content="{{ article.author }}" />
+{% endblock %}
+
+
+{% block content %}
+            <div class = "centerarticle">
+                    <h1>{{ article.title }}</h1>
+    {% if article.subtitle %}
+                    <h3>{{ article.subtitle }}</h3>
+                    <span>by {{ article.author }} on {{ article.date.strftime('%d %B %Y')}}</span>
+    {% endif %}
+    {{ article.content }}
+            </div>
+    {% if DISQUS_SITENAME %}
+    {% include 'disqus.html' %}
+    {% endif %}
+{% endblock %}
+
