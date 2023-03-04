@@ -5,7 +5,7 @@ SITEURL = 'http://dylancramer.ai'
 
 PATH = 'content'
 
-THEME = './graphene-ui'
+THEME = './graphene-redux-theme'
 
 TIMEZONE = 'America/Chicago'
 
