@@ -1,2 +1,2 @@
 git pull
-pelican -o "/var/www/html/"
+pelican -o "/var/www/dylancramer/"
