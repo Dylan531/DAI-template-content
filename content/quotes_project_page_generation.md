@@ -5,7 +5,9 @@ Category: Python Development
 Slug: quotes-project-pagegen
 Authors: Dylan
 
-While I will certainly update this article soon, I wanted to put out the code used to parse through the quotes themselves, and make them into a web page. I also need to fix code being shown incorrectly by Pagination on the home page of this blog, it's incredibly broken.
+&emsp;This is the other half to complement the parsing of the quotes file itself in the previous article. After that text is fed through the series of regex expression to turn them into data I need, the only thing to do is associate it with the correct person. This is nice in painless in Python. We define a function to check which name it is, and then return the key portion of the keypair using that name.
+	
+&emsp;The key itself is simply a text color and a background image, and the page itself is served through Apache's cgi-bin. Every refresh returns a new quote.
 
 	:::python
 	import storage
@@ -57,3 +59,6 @@ While I will certainly update this article soon, I wanted to put out the code us
 	print("Content-type: text/html")
 	print
 	print body
+	
+&emsp;At the end, all of the information that is needed is essentially embedded using Python's nifty string formatting. I believe this is depreciated after Python 2, however.
+

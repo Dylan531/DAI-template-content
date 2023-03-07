@@ -35,5 +35,6 @@ MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Dylan531'),
 
 DEFAULT_PAGINATION = 5
 
+
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
