@@ -3,6 +3,8 @@ SITENAME = "Dylan's Tech Blog"
 
 SITEURL = 'http://dylancramer.ai'
 
+OUTPUT_PATH = '/var/www/html/'
+
 PATH = 'content'
 
 THEME = './graphene-redux-theme'
@@ -37,4 +39,4 @@ DEFAULT_PAGINATION = 5
 
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
