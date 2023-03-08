@@ -32,7 +32,7 @@ MENU_LINKS = (('About', 'pages/about.html'),
           )
 
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/caelis-'),
-          ('git', 'https://gist.github.com/Dylan531'),
+          ('git', 'https://github.com/Dylan531'),
           ('twitter', '/'),)
 
 DEFAULT_PAGINATION = 5
