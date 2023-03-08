@@ -31,12 +31,12 @@ MENU_LINKS = (('About', 'pages/about.html'),
           ('Projects', 'pages/projects.html')
           )
 
-MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Dylan531'),
+MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/caelis-'),
           ('git', 'https://gist.github.com/Dylan531'),
           ('twitter', '/'),)
 
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = 5
 
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
