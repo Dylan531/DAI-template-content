@@ -17,17 +17,9 @@
 	max-width: 1100px;
 	min-width: 780px;
 	margin: auto;
-	background-color: #DEDEDE;
+	background-color: #121212;
 }
-#disqus_thread {
-	padding: 5px;
-	border-radius: 4px;
-	margin-bottom: 20px;
-    	margin-left: auto;
-    	margin-right: auto;
-	width: 900px;
-    	background-color: #F7F7F7;
-}
+
 .headerstretch {
 	display:block;
 	border-top-right-radius: 10px;
@@ -38,15 +30,15 @@
 
 /* CLASSES FOR DISPLAYING CONTENT */
 .content, .centerarticle {
-    	border-radius: 4px;
+    	border-radius: 10px;
     	margin: 35px;
     	padding-left: 20px;
-    	background-color: #F7F7F7;
+		color: rgba(255, 255, 255, 0.80);
+    	background-color: rgba(255, 255, 255, 0.08);
     	display: block;
     	max-width: 700px;
     	text-align: left;
     	padding: 10px;
-    	border: 2px solid #ABAAAA;
 }
 
 .centerarticle {
@@ -55,12 +47,14 @@
     	margin-right: auto;
 }
 .centerarticle h1 {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.16);
+	color: rgba(255, 255, 255, 0.87);
 	margin: 0;
 	padding-bottom: 5px;
 }
 .content h1 {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.16);
+	color: rgba(255, 255, 255, 0.87);
 	margin: 0;
 	padding-bottom: 5px;
 	font-style: italic;
@@ -72,9 +66,10 @@
 	width: 67%;
 }
 .highlight {
-	padding-left: 8px;
-	background-color: #f8f8f8;
-	border: 2px solid #E0E0E0;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.20);
+	border-radius: 4px;
+	font-weight: bold;
 }
 .contentnamedate {
 	text-align: right;
@@ -93,12 +88,14 @@
 }
 .content a {
 	text-decoration: none;
-	color: black;
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.87);
 }
 .content a:hover {
-	color: black;
+	color: rgba(255, 255, 255, 0.87);
 }
 .content p {
+	color: rgba(255, 255, 255, 0.80);
 	margin-top: 3px;
 }
 
@@ -106,20 +103,21 @@
 /* NAVBAR IDS AND CLASSES */
 #nav {
 	height: 40px;
-	background-color: #171717;
-	border-bottom: 2px solid gray;
-	border-top: 2px solid white;
+	background-color: #121212;
+	padding-top: 10px;
 }
 .navb {
+	margin-left: 5px;
+	border-radius: 5px;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
 	width: 100px;
 	height: 30px;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.87);
 }
 .navb, #footer a {
-	color: white;
+	color: rgba(255, 255, 255, 0.87);
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -136,12 +134,12 @@
 .navb a:active {
 	outline: 0;
 	text-decoration: none;
-	color: black;
+	color: #121212;
 	border: none;
 }
 .navb a:hover {
-	background-color: white;
-	color: black;
+	background-color: rgba(255, 255, 255, 0.87);;
+	color: #121212;
 }
 .navb p {
 	text-align: center;
@@ -152,19 +150,19 @@
     padding-right: 10px;
 }
 .icon a:hover {
-	background-color: white;
-	color: black;
+	background-color: rgba(255, 255, 255, 0.87);
+	color: rgba(255, 255, 255, 0.08);
 }
 .navactive {
-	background-color: white;
-	color: black;
+	background-color: rgba(255, 255, 255, 0.87);
+	color: #121212;
 }
 .pagination-nav {
 	padding-bottom: 8px;
 }
 
 .pagination-inactive {
-	color:black;
+	color:rgba(255, 255, 255, 0.08);
 }
 
 .pagination-icon {
@@ -175,11 +173,11 @@
 }
 /* EVERYTHING BELOW IS FOOTER IDS */
 #footer {
-	border-top: 2px solid gray;
-    	color: white;
+	border-top: 2px solid rgba(255, 255, 255, 0.16);
+    	color: rgba(255, 255, 255, 0.87);
     	padding-left: 15px;
     	height: 100px;
-    	background-color: #171717;
+    	background-color: #121212;
     	display: flex;
     	flex-flow: column;
     	justify-content: center;
