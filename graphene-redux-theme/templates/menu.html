@@ -1,7 +1,16 @@
 		<a href="{{ SITEURL }}"><img class="headerstretch" src="{{ SITEURL }}/theme/images/banner.png" alt = "banner"/></a>
 		<div id="nav">
+			{% if 'index' in output_file %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">Home</a></p></div>
+			{% else %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">Home</a></p></div>
+			{% endif %}
    			{% for item, url in MENU_LINKS %}
-    			<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">{{ item }}</a></p></div>
+				{% if url == output_file %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">{{ item }}</a></p></div>
+				{% else %}
+					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">{{ item }}</a></p></div>
+				{% endif %}
     		{% endfor %}
     		{% for item, url in MEDIA_LINKS %}
     			<a class="icon" href="{{ url }}"><img src="{{ SITEURL }}/theme/images/thmb/{{ item }}.png" alt = "{{ item }}"/></a>

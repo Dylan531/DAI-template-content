@@ -26,17 +26,17 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
          ('You can modify those links in your config file', '#'),)
 
-MENU_LINKS = (('Home', ''),
-          ('About', 'pages/about.html'),
-          ('Projects', 'pages/projects.html'),
-          ('Archives', 'archives.html'))
+MENU_LINKS = (('About', 'pages/about.html'),
+          ('Archives', 'archives.html'),
+          ('Projects', 'pages/projects.html')
+          )
 
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Dylan531'),
           ('git', 'https://gist.github.com/Dylan531'),
           ('twitter', '/'),)
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 1
 
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
