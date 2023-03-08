@@ -200,3 +200,19 @@
 	height: 31px;
 	border-style: none;
 }
+/* EVERYTHING BELOW IS ABOUT PAGE */
+.about {
+	flex-flow: row;
+	align-items: center;
+	display: flex;
+}
+.change-flow {
+	width: 100%;
+	padding: 20px;
+}
+
+.headshot {
+	border-radius: 10px;
+	width: 30%;
+	float: left;
+}

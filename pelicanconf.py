@@ -28,7 +28,7 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 
 MENU_LINKS = (('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
-          ('Projects', 'pages/projects.html')
+          #('Projects', 'pages/projects.html')
           )
 
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/caelis-'),
