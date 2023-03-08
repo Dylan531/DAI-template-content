@@ -3,7 +3,7 @@ SITENAME = "Dylan's Tech Blog"
 
 SITEURL = 'https://dylancramer.ai'
 
-OUTPUT_PATH = '/var/www/html/'
+OUTPUT_PATH = '/var/www/dylancramer/'
 
 PATH = 'content'
 
