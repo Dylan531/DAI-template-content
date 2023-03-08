@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% block summary %} {% endblock %}
+    {% if '/about.html' in output_file %}
+    <div class="centerarticle about">
+        <img class="headshot" src="../images/me.jpeg" alt="picture of author">
+        <div class="change-flow"> 
+            <h1>About</h1>
+            <p>&emsp;&emsp; Welcome to my still very much still under construction site! I'm a recent graduate from the Univerty of Minnesota Morris
+                and this is the revival of a site that I conceived of when I was in high school. It's a place for me to share what I've learned and have a place
+                to share my future personal projects as well. I hope I can bring you along for the ride and help everyone learn in the process too! I've learned so much
+                from blogs just like this, and I'm eager to pay it back in whatever way I can.
+            </p>
+            <p>&emsp;&emsp; Hopefully it will also be a place for some levity too, with thoughts on what I'm reading and watching. Whatever the case,
+                please enjoy your stay and feel free to reach out to me if you have any questions!
+            </p>
+            <p></p>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
