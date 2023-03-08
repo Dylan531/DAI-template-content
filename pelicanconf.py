@@ -1,7 +1,7 @@
 AUTHOR = 'Dylan Cramer'
 SITENAME = "Dylan's Tech Blog"
 
-SITEURL = 'http://dylancramer.ai'
+SITEURL = 'https://dylancramer.ai'
 
 OUTPUT_PATH = '/var/www/html/'
 
