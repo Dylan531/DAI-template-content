@@ -22,16 +22,14 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Jinja2', 'https://palletsprojects.com/p/jinja/'))
 
 MENU_LINKS = (('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
           #('Projects', 'pages/projects.html')
           )
 
-MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/caelis-'),
+MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
           ('git', 'https://github.com/Dylan531'),
           ('twitter', '/'),)
 
@@ -39,4 +37,4 @@ DEFAULT_PAGINATION = 5
 
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
