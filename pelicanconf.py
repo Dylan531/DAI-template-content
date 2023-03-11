@@ -35,6 +35,16 @@ MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
 
 DEFAULT_PAGINATION = 5
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {
+            'linenums': 'TRUE',
+            'css_class': 'highlight'
+        },
+        'markdown.extensions.tables': {
+        },
+    }
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
