@@ -21,7 +21,7 @@
 }
 
 .headerstretch {
-	display:block;
+	display: block;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	width: 100%;
@@ -29,36 +29,78 @@
 }
 
 /* CLASSES FOR DISPLAYING CONTENT */
-.content, .centerarticle {
-    	border-radius: 10px;
-    	margin: 35px;
-    	padding-left: 20px;
-		color: rgba(255, 255, 255, 0.80);
-    	background-color: rgba(255, 255, 255, 0.08);
-    	display: block;
-    	max-width: 700px;
-    	text-align: left;
-    	padding: 10px;
-}
 
+h1 { font-size: 24px;}
+h2 { font-size: 22px;}
+h3 { font-size: 18px;}
+
+.content, .centerarticle {
+    color: rgba(255, 255, 255, 0.80);
+	background-color: rgba(255, 255, 255, 0.08);
+	margin: 35px;
+	padding: 25px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	display: block;
+    max-width: 700px;
+    text-align: left;
+    	
+}
 .centerarticle {
-	max-width: 900px;
+	max-width: 850px;
     	margin-left: auto;
     	margin-right: auto;
 }
-.centerarticle h1 {
-	border-bottom: 2px solid rgba(255, 255, 255, 0.16);
-	color: rgba(255, 255, 255, 0.87);
-	margin: 0;
-	padding-bottom: 5px;
+.content li {
+	line-height: 150%;
 }
+
+.content li img {
+	vertical-align: middle;
+}
+
+.content table {
+	background-color: rgba(255, 255, 255, 0.06);
+	border-collapse: collapse;
+}
+.content td, .content th {
+	border: 1px solid rgba(255, 255, 255, 0.80);
+	padding: 5px;
+}
+
+.content h1, .content a, content a:hover {
+	color: rgba(255, 255, 255, 0.87);
+}
+
 .content h1 {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.16);
-	color: rgba(255, 255, 255, 0.87);
 	margin: 0;
 	padding-bottom: 5px;
-	font-style: italic;
 }
+
+.content a {
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.content h1 a {
+	text-decoration: none;
+}
+
+.content p {
+	line-height: 150%;
+	color: rgba(255, 255, 255, 0.80);
+}
+
+.article_list p {
+	margin: 0;
+}
+
+.centerarticle h1 {
+	margin-bottom: 20px;
+}
+
 .archive, .tags {
 	text-align: center;
 }
@@ -66,12 +108,22 @@
 	width: 67%;
 }
 .highlight {
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.20);
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.06);
 	border-radius: 4px;
 	font-weight: bold;
 }
+
+.highlight table {
+	background-color: unset;
+}
+
+.highlight td {
+	border: none;
+}
+
 .contentnamedate {
+	padding-bottom: 10px;
 	text-align: right;
 	font-style: italic;
 }
@@ -83,29 +135,17 @@
 .centerlink {
 	width:100px;
 }
-.centerarticle {
-	max-width:900px;
-}
-.content a {
-	text-decoration: none;
-	border-radius: 5px;
-	color: rgba(255, 255, 255, 0.87);
-}
-.content a:hover {
-	color: rgba(255, 255, 255, 0.87);
-}
-.content p {
-	color: rgba(255, 255, 255, 0.80);
-	margin-top: 3px;
-}
+
+
+
 
 
 /* NAVBAR IDS AND CLASSES */
 #nav {
 	height: 40px;
-	background-color: #121212;
 	padding-top: 10px;
 }
+
 .navb {
 	margin-left: 5px;
 	border-radius: 5px;
@@ -177,7 +217,6 @@
     	color: rgba(255, 255, 255, 0.87);
     	padding-left: 15px;
     	height: 100px;
-    	background-color: #121212;
     	display: flex;
     	flex-flow: column;
     	justify-content: center;
@@ -190,18 +229,9 @@
     	display: flex;
     	align-items: center;
 }
-
-#val,#valup {
-	margin-left: 1000px;
-}
-.valid {
-	border: 0;
-	width: 88px;
-	height: 31px;
-	border-style: none;
-}
 /* EVERYTHING BELOW IS ABOUT PAGE */
 .about {
+	line-height: 150%;
 	flex-flow: row;
 	align-items: center;
 	display: flex;
