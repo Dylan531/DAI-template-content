@@ -25,6 +25,7 @@ function loadRain() {
 
     var head = document.getElementsByTagName('head')[0]
     var body = document.getElementsByTagName('body')[0]
+    var host = window.location.host;
 
     // Interate through the rainDivs and append them all to the body, change the array for more or less rain!
     for (let i = 0; i < rainDivs.length; i++) {
@@ -36,19 +37,29 @@ function loadRain() {
 
     // Add stylesheet for the rain
     var style = document.createElement('link') 
-    style.href = 'theme/css/rain.css'
+    style.href = '/theme/css/rain.css'
     style.type = 'text/css'
     style.rel = 'stylesheet'
-    head.append(style);
+    
 
 
     // Add music to the page
     var audio = document.createElement('audio')
-    audio.src = 'theme/audio/raining.mp3'
+    audio.src = '/theme/audio/raining.mp3'
     audio.loop = true
     audio.autoplay = true
     audio.volume = 0.5
     audio.id = 'dynamicAudio'
+
+    // Make the page function even if offline
+    if(host == '') {
+        var offlinePath = window.location.pathname
+        path = offlinePath.substring(0, offlinePath.indexOf('output')) + 'output'
+        style.href = path + '/theme/css/rain.css'
+        audio.src = path + '/theme/audio/raining.mp3'
+    }
+
+    head.append(style);
     body.append(audio);
       
     // Adding the name of the file to keep record
