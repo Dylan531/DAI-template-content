@@ -13,20 +13,14 @@
     	<meta property="og:description" content=" {{ DESCRIPTION }}" />
     	<meta property="og:type" content="website" />
     	{% endblock meta_tags %}
-    	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css?v=1.3"/>
+		<link rel="icon" type="image/x-icon" href="{{ SITEURL }}/theme/images/favicon.ico">
+    	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css?v=1.6"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css"/>
 		<script src="{{ SITEURL }}/theme/scripts/rain.js"></script>
 	</head>
 	<body id="background">
-		<div class="rain r1"></div>
-		<div class="rain r2"></div>
-		<div class="rain r3"></div>
-		<div class="rain r4"></div>
-		<div class="rain r5"></div>
-		<div class="rain r6"></div> 
 		<div id="main"> 
 
-		
 			{% include 'menu.html' %}
 
             {% block content %}
