@@ -253,6 +253,7 @@ h3 { font-size: 18px; }
 .headshot {
 	border-radius: 10px;
 	width: 30%;
+<<<<<<< HEAD
 	margin-top: 16px;
 	margin-bottom: auto;
 }
@@ -283,3 +284,7 @@ h3 { font-size: 18px; }
 .linenos {
 	border-right: 1px solid rgba(255, 255, 255, 0.80) !important;
 }
+=======
+	float: left;
+}
+>>>>>>> 295386f (Secret hotfix)
