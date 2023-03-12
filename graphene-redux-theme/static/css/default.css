@@ -5,7 +5,7 @@
 	height: 100%;
 	background-repeat: no-repeat;
 	padding-top: 15px;
-    padding-bottom: 15px;
+    	padding-bottom: 15px;
 }
 #main {
 	border-top-left-radius: 20px;
@@ -25,16 +25,17 @@
   	object-fit: fill;
 }
 .ghostbanner {
+	width: auto;
 	position: absolute;
 	z-index: 2;
-	margin-top: -320px;
+	margin-top: -275px;
 }
 
 /* CLASSES FOR DISPLAYING CONTENT */
 
-h1 { font-size: 24px;}
-h2 { font-size: 22px;}
-h3 { font-size: 18px;}
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
 
 .content, .centerarticle {
     color: rgba(255, 255, 255, 0.80);
