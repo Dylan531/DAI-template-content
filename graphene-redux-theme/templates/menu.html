@@ -1,19 +1,24 @@
 		<img class="headerstretch" src="{{ SITEURL }}/theme/images/banner.png" alt = "banner"/>
+		
+		
+		{% if EASTER_EGG %}
 		<img class="headerstretch ghostbanner" src="{{ SITEURL }}/theme/images/ghost-banner.png" alt = "ghostbanner" usemap="#secret"/>
 		<map name="secret">
 			<area onclick="loadRain()" shape="rect" coords="845,195,930,265" href="#" alt="secret">
 		</map>
+		{% endif %}
+
 		<div id="nav">
 			{% if 'index' in output_file %}
-					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">Home</a></p></div>
+				<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">Home</a></p></div>
 			{% else %}
-					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">Home</a></p></div>
+				<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">Home</a></p></div>
 			{% endif %}
    			{% for item, url in MENU_LINKS %}
 				{% if url == output_file %}
-					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">{{ item }}</a></p></div>
+				<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb navactive">{{ item }}</a></p></div>
 				{% else %}
-					<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">{{ item }}</a></p></div>
+				<div class="navb"><p><a href="{{ SITEURL }}/{{ url }}" class="navb">{{ item }}</a></p></div>
 				{% endif %}
     		{% endfor %}
     		{% for item, url in MEDIA_LINKS %}
