@@ -75,7 +75,7 @@ h3 { font-size: 18px; }
 	padding: 5px;
 }
 
-.content h1, .content a, content a:hover {
+.content h1, .content a, content a:hover, .about a {
 	color: rgba(255, 255, 255, 0.87);
 }
 
@@ -85,7 +85,7 @@ h3 { font-size: 18px; }
 	padding-bottom: 5px;
 }
 
-.content a {
+.content a, .about a {
 	font-style: italic;
 	font-weight: bold;
 	border-radius: 5px;
@@ -206,11 +206,11 @@ h3 { font-size: 18px; }
 	color: #121212;
 }
 .pagination-nav {
-	padding-bottom: 8px;
+	padding-bottom: 18px;
 }
 
 .pagination-inactive {
-	color:rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.87);
 }
 
 .pagination-icon {
@@ -253,4 +253,8 @@ h3 { font-size: 18px; }
 	border-radius: 10px;
 	width: 30%;
 	float: left;
+}
+
+@media only screen and (max-width: 760px) {
+	.ghost { display: none; }
 }

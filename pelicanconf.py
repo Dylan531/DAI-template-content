@@ -24,6 +24,9 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'))
 
+# Boolean for the special easter egg, no script or area tag if False
+EASTER_EGG = True
+
 MENU_LINKS = (('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
           #('Projects', 'pages/projects.html')
@@ -31,7 +34,7 @@ MENU_LINKS = (('About', 'pages/about.html'),
 
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
           ('git', 'https://github.com/Dylan531'),
-          ('twitter', '/'),)
+          ('twitter', 'https://twitter.com/NCaelis'),)
 
 DEFAULT_PAGINATION = 5
 

@@ -14,9 +14,11 @@
     	<meta property="og:type" content="website" />
     	{% endblock meta_tags %}
 		  <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/theme/images/favicon.ico">
-    	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css?v=1.6"/>
+    	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css?v=1.7"/>
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css"/>
+		{% if EASTER_EGG %}
 		<script src="{{ SITEURL }}/theme/scripts/rain.js?v=1.2"></script>
+		{% endif %}
 	</head>
 	<body id="background">
 		<div id="main"> 
