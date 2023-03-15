@@ -33,17 +33,17 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
          )
 
-# Nav bar menu links
-MENU_LINKS = (('Projects', 'pages/projects.html'),
-          ('About', 'pages/about.html'),
+# Boolean for the special easter egg, no script or area tag if False
+EASTER_EGG = True
+
+MENU_LINKS = (('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
           )
 
 # Nav bar social links
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
           ('git', 'https://github.com/Dylan531'),
-          ('twitter', 'https://twitter.com/NCaelis'),
-          )
+          ('twitter', 'https://twitter.com/NCaelis'),)
 
 # Number of articles per page
 DEFAULT_PAGINATION = 5

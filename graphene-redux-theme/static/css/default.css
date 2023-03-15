@@ -75,7 +75,7 @@ h3 { font-size: 18px; }
 	padding: 5px;
 }
 
-.content h1, .content a, content a:hover, .about a, .projects a {
+.content h1, .content a, content a:hover, .about a {
 	color: rgba(255, 255, 255, 0.87);
 }
 
@@ -288,3 +288,7 @@ h3 { font-size: 18px; }
 	float: left;
 }
 >>>>>>> 295386f (Secret hotfix)
+
+@media only screen and (max-width: 760px) {
+	.ghost { display: none; }
+}
