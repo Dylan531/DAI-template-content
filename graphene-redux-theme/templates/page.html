@@ -26,8 +26,33 @@
             <h1>Contact me</h1>
 
             <p>
-                If not the socials in the navigation bar, you can also contact me at <a href="mailto:admin@dylancramer.ai">admin@dylancramer.ai</a>!
+                If not the socials in the navigation bar, you can also contact me at <a href="mailto:admin@dylancramer.ai">admin@dylancramer.ai</a> !
             </p>
+        </div>
+    </div>
+    {% endif %}
+    {% if '/projects.html' in output_file %}
+    <div class="centerarticle projects">
+        <div class="project-card">
+            <div class="project-info">
+                <h1>SAGE Project Portfolio</h1>
+                <p>
+                    SAGE is a game for teachers and students who want a way to improve student vocabulary. It is designed for a classroom setting. 
+                    SAGE is an acronym for synonyms, antonyms, general sense, and example usage. In a game of SAGE, there are a number of cards the player will be presented with, 
+                    each of them being worth points. The player is initially given just the word for a card. It is up to them to either guess the meaning of that word, 
+                    or ask for a hint at the expense of some points. It's somewhat similar to games like Quiplash in that it is web-based with a host.
+                </p>
+                <p>
+                    The game itself is built with Angular and numerous other tools seen on the sidebar by myself and a software development team from the University of Minnesota Morris.
+                    We developed the game using the Agile approach to development, working very closely with a teacher from a local school (our customer) right from the elevator pitch to the final iteration.
+                    The code and more information on hosting the app is available on <a href="https://github.com/UMM-CSci-3601-F17/sage-team-cheezit">Github</a>. A taste of my personal contributions to the 
+                    project and more information on the project itself is available <a href="{{ SITEURL }}/files/sageportfolio.pdf"> on my portfolio here</a>.
+
+                </p>
+            </div>
+            <a class="project-link" href="https://github.com/UMM-CSci-3601-F17/sage-team-cheezit">
+                <img class="headshot projectimg" src="../images/sage.png" alt="SAGE Vocabulary Game">
+            </a>
         </div>
     </div>
     {% endif %}
