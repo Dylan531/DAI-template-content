@@ -27,7 +27,7 @@ function loadRain() {
     var body = document.getElementsByTagName('body')[0]
     var host = window.location.host;
 
-    // Interate through the rainDivs and append them all to the body, change the array for more or less rain!
+    // Iterate through the rainDivs and append them all to the body, change the array for more or less rain!
     for (let i = 0; i < rainDivs.length; i++) {
         var div = document.createElement('div');
         div.className = rainDivs[i];
@@ -51,7 +51,7 @@ function loadRain() {
     audio.volume = 0.5
     audio.id = 'dynamicAudio'
 
-    // Make the page function even if offline
+    // Make the page function even if offline, assumes the built Pelican folder is named 'output'
     if(host == '') {
         var offlinePath = window.location.pathname
         path = offlinePath.substring(0, offlinePath.indexOf('output')) + 'output'

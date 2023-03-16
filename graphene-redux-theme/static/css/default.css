@@ -58,7 +58,7 @@ h3 { font-size: 18px; }
     	margin-left: auto;
     	margin-right: auto;
 }
-.content li {
+.content li, .projects p {
 	line-height: 150%;
 }
 
@@ -75,7 +75,7 @@ h3 { font-size: 18px; }
 	padding: 5px;
 }
 
-.content h1, .content a, content a:hover, .about a {
+.content h1, .content a, content a:hover, .about a, .projects a {
 	color: rgba(255, 255, 255, 0.87);
 }
 
@@ -246,15 +246,35 @@ h3 { font-size: 18px; }
 }
 .change-flow {
 	width: 100%;
-	padding: 20px;
+	padding-left: 25px;
 }
 
 .headshot {
 	border-radius: 10px;
 	width: 30%;
-	float: left;
+	margin-top: 16px;
+	margin-bottom: auto;
 }
 
-@media only screen and (max-width: 760px) {
+.project-card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-info {
+	width: 80%;
+}
+  
+.projectimg {
+	width: 90%;
+	float: right;
+}
+
+.projects h1 {
+	border-bottom:rgba(255, 255, 255, 0.80) 4px solid;
+	padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 840px) {
 	.ghost { display: none; }
 }

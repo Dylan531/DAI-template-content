@@ -6,6 +6,7 @@ SITEURL = 'https://dylancramer.ai'
 OUTPUT_PATH = '/var/www/dylancramer/'
 
 PATH = 'content'
+STATIC_PATHS = ['images', 'files']
 
 THEME = './graphene-redux-theme'
 
@@ -27,9 +28,9 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 # Boolean for the special easter egg, no script or area tag if False
 EASTER_EGG = True
 
-MENU_LINKS = (('About', 'pages/about.html'),
+MENU_LINKS = (('Projects', 'pages/projects.html'),
+          ('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
-          #('Projects', 'pages/projects.html')
           )
 
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
