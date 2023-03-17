@@ -125,8 +125,9 @@ h3 { font-size: 18px; }
 	background-color: unset;
 }
 
-.highlight td {
+.highlight td, .highlight th {
 	border: none;
+	padding: 0px 20px 0px 20px;
 }
 
 .contentnamedate {
@@ -277,4 +278,8 @@ h3 { font-size: 18px; }
 
 @media only screen and (max-width: 840px) {
 	.ghost { display: none; }
+}
+
+.linenos {
+	border-right: 1px solid rgba(255, 255, 255, 0.80) !important;
 }

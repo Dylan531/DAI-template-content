@@ -21,22 +21,31 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'))
-
 # Boolean for the special easter egg, no script or area tag if False
 EASTER_EGG = True
 
+# Boolean for Google Analytics, switch to False if you're not using it, and change the analytics ID to your domain if you are in base.html
+GOOGLE_ANALYTICS = True
+ANALYTICS_ID = 'G-FC8K7W5CHP'
+
+# Footer links
+LINKS = (('Pelican', 'https://getpelican.com/'),
+         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+         )
+
+# Nav bar menu links
 MENU_LINKS = (('Projects', 'pages/projects.html'),
           ('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
           )
 
+# Nav bar social links
 MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
           ('git', 'https://github.com/Dylan531'),
-          ('twitter', 'https://twitter.com/NCaelis'),)
+          ('twitter', 'https://twitter.com/NCaelis'),
+          )
 
+# Number of articles per page
 DEFAULT_PAGINATION = 5
 
 MARKDOWN = {
