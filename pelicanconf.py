@@ -36,7 +36,8 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 # Boolean for the special easter egg, no script or area tag if False
 EASTER_EGG = True
 
-MENU_LINKS = (('About', 'pages/about.html'),
+MENU_LINKS = (('Projects', 'pages/projects.html'),
+          ('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
           )
 
