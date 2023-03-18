@@ -5,7 +5,7 @@
 	height: 100%;
 	background-repeat: no-repeat;
 	padding-top: 15px;
-    	padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 #main {
@@ -75,7 +75,7 @@ h3 { font-size: 18px; }
 	padding: 5px;
 }
 
-.content h1, .content a, content a:hover, .about a, .projects a {
+.content h1, .content a, content a:hover, .about a {
 	color: rgba(255, 255, 255, 0.87);
 }
 
@@ -252,7 +252,7 @@ h3 { font-size: 18px; }
 
 .headshot {
 	border-radius: 10px;
-	width: 30%;
+	width: 20%;
 	margin-top: 16px;
 	margin-bottom: auto;
 }
