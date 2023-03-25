@@ -1,20 +1,19 @@
+import datetime
+
+# General site information
+LAST_BUILT = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 AUTHOR = 'Dylan Cramer'
 SITENAME = "Dylan's Tech Blog"
-
 SITEURL = 'https://dylancramer.ai'
-
-OUTPUT_PATH = '/var/www/dylancramer/'
-
-PATH = 'content'
-STATIC_PATHS = ['images', 'files']
-
-THEME = './graphene-redux-theme'
-
 TIMEZONE = 'America/Chicago'
-
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
+# Paths to hosting location and general content
+PATH = 'content'
+OUTPUT_PATH = '/var/www/dylancramer/'
+STATIC_PATHS = ['images', 'files']
+THEME = './graphene-redux-theme'
+
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -36,6 +35,7 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 # Boolean for the special easter egg, no script or area tag if False
 EASTER_EGG = True
 
+# Nav bar menu links
 MENU_LINKS = (('Projects', 'pages/projects.html'),
           ('About', 'pages/about.html'),
           ('Archives', 'archives.html'),
@@ -46,7 +46,7 @@ MEDIA_LINKS = (('steam', 'http://steamcommunity.com/id/Caelis-'),
           ('git', 'https://github.com/Dylan531'),
           ('twitter', 'https://twitter.com/NCaelis'),)
 
-# Number of articles per page
+# Number of articles per page for index
 DEFAULT_PAGINATION = 5
 
 MARKDOWN = {
