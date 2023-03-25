@@ -276,7 +276,7 @@ h3 { font-size: 18px; }
 	padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 840px) {
+@media (max-width: 740px) {
 	.ghost { display: none; }
 }
 
