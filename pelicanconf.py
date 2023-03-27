@@ -38,7 +38,7 @@ EASTER_EGG = True
 # Nav bar menu links
 MENU_LINKS = (('Projects', 'pages/projects.html'),
           ('About', 'pages/about.html'),
-          ('Archives', 'archives.html'),
+          #('Archives', 'archives.html'),
           )
 
 # Nav bar social links
