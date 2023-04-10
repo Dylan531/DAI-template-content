@@ -283,3 +283,53 @@ h3 { font-size: 18px; }
 .linenos {
 	border-right: 1px solid rgba(255, 255, 255, 0.80) !important;
 }
+
+.comment-container {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.80);
+	border-radius: 5px;
+}
+.comment-header {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.comment-body {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.comment-footer {
+	font-size: 12px;
+	color: #828282;
+}
+
+textarea#comment {
+	height: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 60%;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="email"]:valid {
+  border: 2px solid green;
+}
+  
+input[type="email"]:invalid {
+  border: 2px solid red;
+}
