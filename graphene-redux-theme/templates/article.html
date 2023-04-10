@@ -8,20 +8,41 @@
 <meta property="og:description" content=" {{ article.meta_description }}" />
 <meta property="og:type" content="article" />
 <meta property="og:author" content="{{ article.author }}" />
+<script type="module" src="{{ SITEURL }}/theme/scripts/jquery-3.6.4.min.js"></script>
 {% endblock %}
 
 
 {% block content %}
             <div class = "content centerarticle">
                     <h1>{{ article.title }}</h1>
-    {% if article.subtitle %}
+                {% if article.subtitle %}
                     <h3>{{ article.subtitle }}</h3>
                     <span>by {{ article.author }} on {{ article.date.strftime('%d %B %Y')}}</span>
-    {% endif %}
-    {{ article.content }}
+                {% endif %}
+
+                {{ article.content }}
             </div>
-    {% if DISQUS_SITENAME %}
-    {% include 'disqus.html' %}
-    {% endif %}
+            <div class="content centerarticle">
+                <h2 style="margin-top: 0;">Leave a Comment</h2>
+                <form>
+                  <div class="input-field">
+                    <input id="name" type="text" placeholder="Enter your name or leave blank to post anonymously"/>
+                  </div>
+                  <div class="input-field">
+                    <input id="email" type="email" placeholder="Enter an email to reserve your name (Names that exist cannot be reserved)"/>
+                  </div>
+                  <div class="input-field">
+                    <textarea id="comment" value="text" placeholder="Enter your comment"></textarea>
+                  </div>
+                  <button id="postButton" type="button" class="" name="action">
+                    <i class=""> add comment </i>
+                  </button>
+                </form>
+                </br>
+                </br>
+                <div id="comments"></div>
+            </div>
+
+            <script type="module" src="{{ SITEURL }}/theme/scripts/commentclient.js"></script>
 {% endblock %}
 
