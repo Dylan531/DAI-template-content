@@ -12,7 +12,7 @@ const getComments = () => {
   .join('&');
 
   // Fetch the comments of the specified article with the API
-  fetch(`http://localhost:3000/comments?${queryTitle}`)
+  fetch(`https://dylancramer.ai/comments?${queryTitle}`)
   .then(response => response.json())
   .then(data => {
     data.forEach(comment => {
@@ -48,7 +48,7 @@ postButton.addEventListener('click', () => {
   
   const result = JSON.stringify({ "title":title, "name":name, "email":email, "comment":comment });
   
-  fetch('http://localhost:3000/comments', {
+  fetch('https://dylancramer.ai/comments', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8'
