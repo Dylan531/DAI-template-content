@@ -1,6 +1,15 @@
 import './jquery-3.6.4.min.js'
 
 const postButton = document.getElementById('postButton');
+let hostname = window.location.host;
+
+// Check if development mode is enabled
+if (hostname.indexOf('127.0.0.1') !== -1) {
+  hostname = window.location.protocol + '//' + window.location.hostname + ':3000'
+} else {
+  hostname = window.location.protocol + '//' + window.location.hostname
+}
+
 
 const getComments = () => {
   // Get the title of the article
@@ -12,7 +21,7 @@ const getComments = () => {
   .join('&');
 
   // Fetch the comments of the specified article with the API
-  fetch(`https://dylancramer.ai/comments?${queryTitle}`)
+  fetch(hostname + `/comments?${queryTitle}`)
   .then(response => response.json())
   .then(data => {
     data.forEach(comment => {
@@ -48,7 +57,7 @@ postButton.addEventListener('click', () => {
   
   const result = JSON.stringify({ "title":title, "name":name, "email":email, "comment":comment });
   
-  fetch('https://dylancramer.ai/comments', {
+  fetch(hostname + '/comments', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8'

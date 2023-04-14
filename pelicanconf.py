@@ -35,6 +35,9 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 # Boolean for the special easter egg, no script or area tag if False
 EASTER_EGG = True
 
+# Boolean for whether you want comments to be enabled or not
+COMMENTS = True
+
 # Nav bar menu links
 MENU_LINKS = (('Projects', 'pages/projects.html'),
           ('About', 'pages/about.html'),
