@@ -52,11 +52,10 @@ function loadRain() {
     audio.id = 'dynamicAudio'
 
     // Make the page function even if offline, assumes the built Pelican folder is named 'output'
-    if(host == '') {
-        var offlinePath = window.location.pathname
-        path = offlinePath.substring(0, offlinePath.indexOf('output')) + 'output'
-        style.href = path + '/theme/css/rain.css'
-        audio.src = path + '/theme/audio/raining.mp3'
+    // check if host contains '127.0.0.1'
+    if(host.indexOf('127.0.0.1') !== -1) {
+        style.href = '/output/theme/css/rain.css'
+        audio.src = '/output/theme/audio/raining.mp3'
     }
 
     head.append(style);

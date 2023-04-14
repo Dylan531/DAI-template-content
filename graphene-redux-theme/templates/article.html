@@ -22,6 +22,8 @@
 
                 {{ article.content }}
             </div>
+
+            {% if COMMENTS %}
             <div class="content centerarticle">
                 <h2 style="margin-top: 0;">Leave a Comment</h2>
                 <form>
@@ -43,6 +45,7 @@
                 <div id="comments"></div>
             </div>
 
-            <script type="module" src="{{ SITEURL }}/theme/scripts/commentclient.js"></script>
+            <script type="module" src="{{ SITEURL }}/theme/scripts/commentclient.js?v=1.2"></script>
+            {% endif %}
 {% endblock %}
 

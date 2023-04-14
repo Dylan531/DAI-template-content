@@ -325,11 +325,3 @@ input[type="text"]::placeholder,
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
-input[type="email"]:valid {
-  border: 2px solid green;
-}
-  
-input[type="email"]:invalid {
-  border: 2px solid red;
-}
