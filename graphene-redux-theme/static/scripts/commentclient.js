@@ -3,14 +3,19 @@ import './jquery-3.6.4.min.js'
 const postButton = document.getElementById('postButton');
 let hostname = window.location.host;
 
-// Check if development mode is enabled
+// Check if hosting is local, since a port has to be appended to point to the server
 if (hostname.indexOf('127.0.0.1') !== -1) {
   hostname = window.location.protocol + '//' + window.location.hostname + ':3000'
 } else {
   hostname = window.location.protocol + '//' + window.location.hostname
 }
 
-
+/**
+ * This function fetches comments for a given article by making a GET request 
+ * to the server API with the encoded article title as a query parameter. It 
+ * then generates an HTML template for each comment and appends it to a 
+ * specified element on the page. 
+ */
 const getComments = () => {
   // Get the title of the article
   const title = $('meta[property="og:title"]').attr('content');
